@@ -14,4 +14,4 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ## Major stuff
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+Lorem Ipsum is simply dummy text of the z printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
