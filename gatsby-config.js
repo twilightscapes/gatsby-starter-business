@@ -17,15 +17,25 @@ module.exports = {
     },
   },
   plugins: [
+	  
+	  {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["UA-89654528-2"],
+      },
+    },
+    
+    
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/assets/img`,
+        path: `${__dirname}/src/img`,
         name: 'uploads',
       },
     },
@@ -42,7 +52,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/assets/img`,
+        path: `${__dirname}/src/img`,
         name: 'images',
       },
     },
@@ -68,6 +78,8 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-dark-mode',
+    `gatsby-plugin-sitemap`,
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
@@ -90,27 +102,16 @@ module.exports = {
         includeInDevelopment: false,
       },
     },
-    {
+     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitleAlt,
-        start_url: '/index.html',
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
-        display: 'standalone',
-        icons: [
-          {
-            src: `/icons/icon-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/icons/icon-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-        ],
+        name: `Todd Lambert`,
+        short_name: `Todd Lambert`,
+        start_url: `/`,
+        background_color: `#222`,
+        theme_color: `#dc3907`,
+        display: `standalone`,
+        icon: `src/img/todd-icon.svg`,
       },
     },
     `gatsby-plugin-offline`,
