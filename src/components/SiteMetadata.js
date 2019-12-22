@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby'
-import favicon from '../assets/img/favicon.ico'
+
 
 const useSiteMetadata = () => {
   const { site } = useStaticQuery(
