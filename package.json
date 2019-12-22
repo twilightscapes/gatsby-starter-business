@@ -64,7 +64,9 @@
     "react-photo-gallery": "^8.0.0",
     "react-share": "^3.0.1",
     "smooth-scroll": "^16.1.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "typeface-hammersmith-one": "0.0.72",
+    "typeface-lobster-two": "0.0.72"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
