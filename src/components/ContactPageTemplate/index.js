@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import { ContactForm } from '../forms'
+// import { ContactForm } from '../forms'
 
 const ContactPageTemplate = ({ title, subtitle, meta_title, meta_description }) => {
   return <div>
@@ -29,7 +29,7 @@ const ContactPageTemplate = ({ title, subtitle, meta_title, meta_description }) 
     </section>
     <section className='section'>
       <div className='container'>
-        <ContactForm />
+   
       </div>
     </section>
   </div>

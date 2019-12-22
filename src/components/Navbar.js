@@ -40,9 +40,11 @@ const Navbar = class extends React.Component {
 
             <ul id="menu" className="menu">
             
-            <li className="grad" style={{position:'relative',}}>
-              <Link className="navbar-item" to="/blog" style={{paddingRight:'',}}>
-                Blog 
+            
+              
+              <li className="grad" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/portfolio" style={{paddingRight:'',}}>
+                Portfolio 
               </Link>
               </li>
               
@@ -54,15 +56,21 @@ const Navbar = class extends React.Component {
               </li>
               
               
-               <li className="grad" style={{position:'relative',}}>
-              <Link id="galleries" className="navbar-item" to="/galleries"  style={{paddingRight:'',}}>
-               Photography 
-              </Link>
-              </li>
+               {/* <li className="grad" style={{position:'relative',}}>
+                             <Link id="galleries" className="navbar-item" to="/galleries"  style={{paddingRight:'',}}>
+                              Photography 
+                             </Link>
+                             </li> */}
               
               <li className="grad" style={{position:'relative',}}>
               <Link className="navbar-item" to="/about" style={{paddingRight:'',}}>
                 About 
+              </Link>
+              </li>
+              
+              <li className="grad" style={{position:'relative',}}>
+              <Link className="navbar-item" to="/blog" style={{paddingRight:'',}}>
+                Blog 
               </Link>
               </li>
               
